@@ -1,8 +1,16 @@
 package main
 
-import "fmt"
+// FizzBuzz
+// i/o variable
+// Array
+// Slices
+// Map
+// for
+// function
+// Anonymous
+// defer
 
-func mainNN() {
+func mainKK() {
 	// var helloWorld string
 	// helloWorld = "Hello World!"
 	// fmt.Println(helloWorld)
@@ -20,7 +28,7 @@ func mainNN() {
 	// 	fmt.Println(i)
 	// }
 
-	// // FizzBuzz
+	// FizzBuzz
 	// for i := 0; i <= 100; i++ {
 	// 	if i%3 == 0 && i%5 == 0 {
 	// 		fmt.Println("FizzBuzz")
@@ -33,6 +41,7 @@ func mainNN() {
 	// 	}
 	// }
 
+	// i/o variable
 	// var x int
 	// fmt.Printf("Please input the number: ")
 	// fmt.Scanf("%d", &x)
@@ -72,13 +81,62 @@ func mainNN() {
 
 	// fmt.Println(value, ok)
 
+	// for loop in array
 	// x := []string{"a", "b", "c", "d"}
 	// for _, value := range x {
 	// 	fmt.Println(value)
 	// }
 
-	x := map[string]string{"A": "a", "B": "b", "C": "c", "D": "d"}
-	for key, value := range x {
-		fmt.Println(key, value)
-	}
+	// for loop in map
+	// x := map[string]string{"A": "a", "B": "b", "C": "c", "D": "d"}
+	// for key, value := range x {
+	// 	fmt.Println(key, value)
+	// }
+
+	// function
+	// fmt.Println(minus(3, 1))
+
+	// funtion return more than one value
+	// c, d := sumAndMinus(3, 1)
+	// fmt.Println(c, d)
+
+	// Anonymous function
+	// fmt.Println(func(a int, b int) int {
+	// 	return a + b
+	// }(2, 3))
+
+	// defer run after main keep like in form of stack
+	// defer always run even error
+	// defer fmt.Println("Hello")
+	// defer fmt.Println("World")
+	// fmt.Println("Eiei")
+	// fmt.Println(plus(3, 2))
 }
+
+// declare function and declare return value
+// func minus(a int, b int) (c int) {
+// 	c = a - b
+// 	return
+// }
+
+// return many value
+// func sumAndMinus(a int, b int) (int, int) {
+// 	return a + b, a - b
+// }
+
+// using defer and Anonymous function in function
+// func plus(a int, b int) (c int) {
+// 	defer func() {
+// 		c += 2
+// 	}()
+// 	c = a + b
+// 	return
+// }
+
+// func divide(a int, b int) (c int) {
+// 	defer func() {
+// 		fmt.Println("Finish")
+// 	}()
+// 	c = a / b
+// 	return
+// }
