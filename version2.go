@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func mainN() {
 	store := map[string]string{}
 	var key string
 	var temp string
