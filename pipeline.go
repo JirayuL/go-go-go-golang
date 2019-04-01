@@ -31,7 +31,7 @@ func print(input chan int) {
 
 }
 
-func add(input chan int) chan int {
+func addd(input chan int) chan int {
 	output := make(chan int)
 	go func() {
 		for num := range input {
@@ -45,6 +45,6 @@ func add(input chan int) chan int {
 func mainPP() {
 	g := generator()
 	m := multiply(g)
-	a := add(m)
+	a := addd(m)
 	print(a)
 }

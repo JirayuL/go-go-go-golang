@@ -9,7 +9,7 @@ func count(c chan int) {
 	close(c)
 }
 
-func mainRR() {
+func mainR() {
 	c := make(chan int)
 	go count(c)
 	for i := range c {

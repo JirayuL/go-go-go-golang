@@ -5,20 +5,20 @@ import "sync"
 
 // import "time"
 
-var wg sync.WaitGroup
+var wgg sync.WaitGroup
 
 func maiHHn() {
-	wg.Add(4)
+	wgg.Add(4)
 	go sayHello()
 	go sayHello()
 	go sayHello()
 	go sayHello()
 	// time.Sleep(1 * time.Second)
-	wg.Wait()
+	wgg.Wait()
 	fmt.Println("World")
 }
 
 func sayHello() {
 	fmt.Println("Hello")
-	wg.Done()
+	wgg.Done()
 }
