@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func main() {
+func maiNNn() {
 	fmt.Println(math.Abs(-10))
 
 	// throw error
