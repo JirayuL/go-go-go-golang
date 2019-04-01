@@ -8,7 +8,7 @@ func workerr(c chan int) {
 
 func mainJJ() {
 	c := make(chan int)
-	go worker(c)
+	go workerr(c)
 	num := <-c
 	fmt.Println(num)
 }
