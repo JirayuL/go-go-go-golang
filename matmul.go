@@ -7,7 +7,7 @@ import (
 
 const N = 1000
 
-func main() {
+func mainHH() {
 	var a [N][N]int
 	var b [N][N]int
 	var c [N][N]int
